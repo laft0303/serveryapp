@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Tab Two
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <h1 *ngIf="mensajeError !=''">{{mensajeError}}</h1>
+    <ion-card *ngFor="let persona of personas ">
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-title>{{persona.id}}</ion-card-title>
+        <ion-card-subtitle>{{persona.nombre}}</ion-card-subtitle>
+        <ion-card-subtitle>{{persona.edad}}</ion-card-subtitle>
+        <ion-card-subtitle>{{persona.genero}}</ion-card-subtitle>
+        <ion-card-subtitle>{{persona.email}}</ion-card-subtitle>
+        <ion-card-subtitle>{{persona.localidad}}</ion-card-subtitle>
+        <ion-card-subtitle>{{persona.telefono}}</ion-card-subtitle>
+
+    </ion-card>
+</ion-content>
